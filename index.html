@@ -9,14 +9,12 @@
 
 <body> 
    <header>
-   <h1> CSS Snippets Wireframing Implemented</h1></header> 
-        <h2>
-            <section>Text-Block Snippet</section>
-        </h2>
-   <!--HTML snippet for the image with text in a box (from w3school)-->
+    <h1> CSS Snippets Wireframing Implemented</h1></header> 
    <div class="container">
+
     <div class="text-block">
-      <h4>This CSS Snippet allows you to for a box with text inside of it</h4>
+        <h2>Text Box</h2>
+            <h3>This CSS Snippet allows for a box with a text inside of it</h3>
      
         <pre>
             .container {
@@ -30,30 +28,72 @@
         </pre>
     </div>
   </div>
-  <h4> This CSS Snippet is to create a simple box with a background color of orange and a text color of white</h4>  
+
+  <h2> Background and text color</h2>
+  <h3> This CSS Snippet is to create a simple box with a background color of orange and a text color of white</h3>
+
   <pre>
     <p>
         .box-orange {/* Uses hex codes to define color */        
         color.red}       
-        </p>
-        </pre>
-   <h2>This CSS Snippet is used to create a "loader"</h2>
+    </p>
+  </pre>
+
+  <h2>Loader Icon</h2>
+   <h3>This CSS Snippet is used to create a "loader"</h3>
    <pre>
     .loader {
     border-top: 16px solid blue;
     border-right: 16px solid green;
     border-bottom: 16px solid red;}
-  </pre>
-   <h2>title 3</h2>
-   <pre>"snippet"</pre>
-   <h2>title 4</h2>
-   <pre>"snippet"</pre>
-   <h2>title 5</h2>
+   </pre>
+
+   <h2>Image Magnifier Glass</h2>
+    <h3>Creates a magnifying glass when viewer hovers over the image.</h3>
+   <pre>
+    * {box-sizing: border-box;}
+
+    .img-magnifier-container {
+    position: relative;}
+
+    .img-magnifier-glass {
+    position: absolute;
+    border: 3px solid #000;
+    border-radius: 50%;
+    cursor: none;
+    /*Set the size of the magnifier glass:*/
+    width: 100px;
+    height: 100px;
+    }
+   </pre>
+
+   <h2>Image Rounding</h2>
+   <h3>Creates a round image.</h3>
+   <pre>
+    img {
+        border-radius: 50%;
+      }
+   </pre>
+
+   <h2>Side by Side Imaging</h2>
+   <h3>Sets two images side by side.</h3>
+   <pre>
+      .column {
+        float: left;
+        width: 33.33%;
+        padding: 5px;
+      }
+      
+      .row::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+   </pre>
 </body>
 
-
-
-
-
+<footer>
+    Made by Kenneth and Rogelio
+</footer>
 
 </html>
