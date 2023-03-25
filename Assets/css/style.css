@@ -1,16 +1,30 @@
-/*Snippet for an image that holds text in a box from W3schools/*
-/* Container holding the image and the text */
+.background {
+  background-color: rgb(48, 48, 150)
+
+}
 .container {
     position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    display: block
   }
-  
-  /* Bottom right text */
-  .text-block {
-    position: static;
-    bottom:3px;
-    right:0px;
-    background-color:turquoise;
-    color:grey;
-    padding-left:5px;
-    padding-right:5px;
+ 
+.container-maroon {
+  background-color: maroon;
+}  
+
+
+.container-aqua {
+  background-color: aqua;
+}
+
+
+.title {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: maroon;
+}
+  .container-red {
+    background-color: red
+    
   }
