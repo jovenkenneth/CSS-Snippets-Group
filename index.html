@@ -11,69 +11,74 @@
    <section class="background">
       <header>
           <section class="container container-maroon">
-          <h1> CSS Snippets Wireframing Implemented</h1>
+            <h1> CSS Snippets Wireframing Implemented</h1>
           </section>  
       </header> 
    
-   <section class="container container-aqua">
-        <h2>Text Box</h2>
-            <h3>This CSS Snippet allows for a box with a text inside of it</h3>
-     
+      <div class="row1">
+        <section class="column container container-aqua">
+          <h2>Text Box</h2>
+          <h3>This CSS Snippet allows for a box with a text inside of it</h3>
+      
+          <pre>
+              .container {
+              position: relative;}
+              .text-block {
+              position: absolute;
+              bottom:;
+              right:;
+              background-color:;
+              color:;}
+                        
+            </pre>
+      </section>
+
+      <section class="column container container-aqua">
+        <h2> Background and text color</h2>
+        <h3> This CSS Snippet is to create a simple box with a background color of orange and a text color of white</h3>
+
         <pre>
-            .container {
-            position: relative;}
-            .text-block {
-            position: absolute;
-            bottom:;
-            right:;
-            background-color:;
-            color:;}
-                      
+          <p>
+            .box-orange {/* Uses hex codes to define color */        
+            color.red}       
+          </p>
+        </pre>
+      </section>
+
+      <section class="column container container-aqua">
+          <h2>Loader Icon</h2>
+          <h3>This CSS Snippet is used to create a "loader"</h3>
+          <pre>
+            .loader {
+            border-top: 16px solid blue;
+            border-right: 16px solid green;
+            border-bottom: 16px solid red;}
           </pre>
-    </section>
+      </section>
+      
 
-    <section class="container container-aqua">
-  <h2> Background and text color</h2>
-  <h3> This CSS Snippet is to create a simple box with a background color of orange and a text color of white</h3>
+  <section class="column container container-aqua">   
+  <h2>Image Magnifier Glass</h2>
+      <h3>Creates a magnifying glass when viewer hovers over the image.</h3>
+    <pre>
+      * {box-sizing: border-box;}
 
-  <pre>
-    <p>
-        .box-orange {/* Uses hex codes to define color */        
-        color.red}       
-    </p>
-  </pre>
-   </section>
-   <section class="conatiner container-aqua">
-   <h2>Loader Icon</h2>
-   <h3>This CSS Snippet is used to create a "loader"</h3>
-   <pre>
-    .loader {
-    border-top: 16px solid blue;
-    border-right: 16px solid green;
-    border-bottom: 16px solid red;}
-   </pre>
-</section>
-<section class="container container-aqua">   
-<h2>Image Magnifier Glass</h2>
-    <h3>Creates a magnifying glass when viewer hovers over the image.</h3>
-   <pre>
-    * {box-sizing: border-box;}
+      .img-magnifier-container {
+      position: relative;}
 
-    .img-magnifier-container {
-    position: relative;}
+      .img-magnifier-glass {
+      position: absolute;
+      border: 3px solid #000;
+      border-radius: 50%;
+      cursor: none;
+      /*Set the size of the magnifier glass:*/
+      width: 100px;
+      height: 100px;
+      }
+    </pre>
+  </section>
 
-    .img-magnifier-glass {
-    position: absolute;
-    border: 3px solid #000;
-    border-radius: 50%;
-    cursor: none;
-    /*Set the size of the magnifier glass:*/
-    width: 100px;
-    height: 100px;
-    }
-   </pre>
-</section>
-<section class="container container-aqua">
+<section class="column container container-aqua">
 <h2>Image Rounding</h2>
    <h3>Creates a round image.</h3>
    <pre>
@@ -82,7 +87,7 @@
       }
    </pre>
 </section>
-<section class="container container-aqua">   
+<section class="column container container-aqua">   
 <h2>Side by Side Imaging</h2>
    <h3>Sets two images side by side.</h3>
    <pre>
@@ -99,6 +104,7 @@
       }
    </pre>
    </section>
+  </div>
 </body>
 <section class="container container-maroon">
 <footer>
