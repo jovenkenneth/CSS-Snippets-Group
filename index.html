@@ -5,111 +5,119 @@
     <meta charset="UTF-8" />
     <title> CSS Snippets Wireframing Implemented</title>
     <link rel="stylesheet" href="./Assets/css/style.css" /> 
-  </head>
+</head>
 
 <body> 
-   <section class="background">
+   <div class="background">
+
       <header>
-          <section class="container container-maroon">
-            <h1> CSS Snippets Wireframing Implemented</h1>
-          </section>  
+        <section class="container container-maroon">
+          <h1>CSS Snippets Cheatsheet</h1>
+        </section>  
       </header> 
    
-      <div class="row1">
-        <section class="column container container-aqua">
-          <h2>Text Box</h2>
+      <main>
+        <section class="container2 container-aqua">
+          <h2>Text Box in Image</h2>
           <h3>This CSS Snippet allows for a box with a text inside of it</h3>
-      
-          <pre>
-              .container {
-              position: relative;}
-              .text-block {
+          <pre class="code-block">
+            .container {
+            position: relative;
+            }
+
+            .text-block {
               position: absolute;
-              bottom:;
-              right:;
-              background-color:;
-              color:;}
-                        
-            </pre>
-      </section>
-
-      <section class="column container container-aqua">
-        <h2> Background and text color</h2>
-        <h3> This CSS Snippet is to create a simple box with a background color of orange and a text color of white</h3>
-
-        <pre>
-          <p>
-            .box-orange {/* Uses hex codes to define color */        
-            color.red}       
-          </p>
-        </pre>
-      </section>
-
-      <section class="column container container-aqua">
-          <h2>Loader Icon</h2>
-          <h3>This CSS Snippet is used to create a "loader"</h3>
-          <pre>
-            .loader {
-            border-top: 16px solid blue;
-            border-right: 16px solid green;
-            border-bottom: 16px solid red;}
+              bottom: 20px;
+              right: 20px;
+              background-color: black;
+              color: white;
+              padding-left: 20px;
+              padding-right: 20px;
+            }
           </pre>
-      </section>
+        </section>
+
+        <section class="container2 container-aqua">
+          <h2> Background and text color</h2>
+          <h3> This CSS Snippet is to create a simple box with a background color of red and a text color of white</h3>
+          <pre class="code-block">
+              .box-red {      
+              color: white;
+              background-color: red;
+              }
+          </pre>
+        </section>
+
+        <section class="container2 container-aqua">
+            <h2>Loader Icon</h2>
+            <h3>This CSS Snippet is used to create a "loader"</h3>
+            <pre class="code-block">
+              .loader {
+              border-top: 16px solid blue;
+              border-right: 16px solid green;
+              border-bottom: 16px solid red;
+              }
+            </pre>
+        </section>
       
 
-  <section class="column container container-aqua">   
-  <h2>Image Magnifier Glass</h2>
-      <h3>Creates a magnifying glass when viewer hovers over the image.</h3>
-    <pre>
-      * {box-sizing: border-box;}
+        <section class="container2 container-aqua">   
+          <h2>Image Magnifier Glass</h2>
+          <h3>Creates a magnifying glass when viewer hovers over the image.</h3>
+          <pre class="code-block">
+            * {box-sizing: border-box;}
 
-      .img-magnifier-container {
-      position: relative;}
+            .img-magnifier-container {
+            position: relative;}
 
-      .img-magnifier-glass {
-      position: absolute;
-      border: 3px solid #000;
-      border-radius: 50%;
-      cursor: none;
-      /*Set the size of the magnifier glass:*/
-      width: 100px;
-      height: 100px;
-      }
-    </pre>
-  </section>
+            .img-magnifier-glass {
+            position: absolute;
+            border: 3px solid #000;
+            border-radius: 50%;
+            cursor: none;
+            /*Set the size of the magnifier glass:*/
+            width: 100px;
+            height: 100px;
+            }
+          </pre>
+        </section>
 
-<section class="column container container-aqua">
-<h2>Image Rounding</h2>
-   <h3>Creates a round image.</h3>
-   <pre>
-    img {
-        border-radius: 50%;
-      }
-   </pre>
-</section>
-<section class="column container container-aqua">   
-<h2>Side by Side Imaging</h2>
-   <h3>Sets two images side by side.</h3>
-   <pre>
-      .column {
-        float: left;
-        width: 33.33%;
-        padding: 5px;
-      }
-      
-      .row::after {
-        content: "";
-        clear: both;
-        display: table;
-      }
-   </pre>
-   </section>
-  </div>
+        <section class="container2 container-aqua">
+          <h2>Image Rounding</h2>
+          <h3>Creates a round image.</h3>
+          <pre class="code-block">
+            img {
+            border-radius: 50%;
+            }
+          </pre>
+        </section>
+
+        <section class="container2 container-aqua">   
+          <h2>Side by Side Imaging</h2>
+          <h3>Sets two images side by side.</h3>
+          <pre class="code-block">
+            .column {
+              float: left;
+              width: 33.33%;
+              padding: 5px;
+            }
+            
+            .row::after {
+              content: "";
+              clear: both;
+              display: table;
+            }
+          </pre>
+        </section>
+      </main>
+
+      <footer>
+        <section class="container container-maroon">
+          <h3>Made by Kenneth and Rogelio</h3>
+        </section>
+      </footer>
+
+    </div>
 </body>
-<section class="container container-maroon">
-<footer>
-    Made by Kenneth and Rogelio
-</footer>
-</section>
-</section>
+
 </html>

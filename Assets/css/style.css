@@ -1,47 +1,74 @@
 .background {
-  background-color: rgb(48, 48, 150)
-
+  background-color: rgb(48, 48, 150);
+  width: 100%;
+  height: 100%;
+  border-style: solid;
+  border-width: 2px;
+  padding: 1px;
 }
-.container {
-    position: relative;
-    display: flex;
+
+header,
+footer{
+  display: flex;
     flex-wrap: wrap;
+}
+
+.container {
     display: block;
-    width: 35%;
-    height: 35%;
+    width: 99.6%;
     border-style: solid;
     border-width: 2px;
     padding: 1px;
-  }
+    color: white;
+}
 
-  .column {
-    float: left;
-    width: 33.33%;
-    padding: 5px;
-  }
-  
-  .row1::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
+h1{
+  text-align: center;
+}
+
+main{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container2{
+  display: block;
+  width: 32.89%;
+  border-style: solid;
+  border-width: 2px;
+  padding: 1px;
+  border-radius: 15%;
+  background-color: whitesmoke;
+}
+
+::selection{
+  background-color: blueviolet;
+  color: azure;
+}
+.container2 .code-block{
+  flex-grow: 1;
+}
+
+pre:active{
+  user-select: all;
+}
+
+.container2 pre{
+  white-space: pre-wrap;
+  overflow: auto;
+  tab-size: 3;
+  align-items: center;
+}
+
+h2,
+h3{
+  text-align: center;
+}
  
 .container-maroon {
   background-color: maroon;
 }  
 
-
-.container-aqua {
+.container-aqua:hover {
   background-color: aqua;
 }
-
-
-.title {
-  display: flex;
-  flex-wrap: wrap;
-  background-color: maroon;
-}
-  .container-red {
-    background-color: red
-    
-  }
